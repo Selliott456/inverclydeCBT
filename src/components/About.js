@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return <main>
-    <section>
+    <article>
       <h1>Inverclyde CBT</h1>
       <h2> About Rhona McLaughlin</h2>
       <p>I am a fully qualified and accredited Cognitive Behavioural
@@ -23,6 +23,10 @@ const About = () => {
         <li>​Accredited member of the British Association for Behavioural and Cognitive Psychotherapies</li>
       </ul>
       <p></p>
+    </article>
+    <section>
+      <h2>Testimonials</h2>
+      <p> carousel here</p>
     </section>
   </main>
 

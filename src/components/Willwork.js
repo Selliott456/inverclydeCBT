@@ -6,7 +6,7 @@ const Willwork = () => {
     <p>CBT suits individuals with all sorts of problems
       – including (but not limited to) depression, anxiety, phobias, difficult
       relationships, obsessive-compulsive disorder and eating
-      disorders. <br><br></br></br>
+      disorders. <br></br><br></br>
       CBT is evidence-based, which means we know it works!
       The approach is individualised and collaborative meaning
       the client feels empowered with regards to their 
