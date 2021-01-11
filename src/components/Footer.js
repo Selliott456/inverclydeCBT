@@ -1,21 +1,24 @@
 import React from 'react'
+import email from '../styles/email.png'
+import phone from '../styles/phone.png'
+import address from '../styles/address.png'
 
 const Footer = () => {
-  return <main>
-    <h3>Opening Hours</h3>
-    <ul>
-      <li>Mon: 9:00am - 5:00pm</li>
-      <li>Tue: 1:00pm - 8:00pm </li>
-      <li>Wed: CLOSED </li>
-      <li>Thu: 9:00am - 5:00pm </li>
-      <li>Fri: 9:00am - 1:00pm </li>
-    </ul>
-    <section>
-      <h3>Contact</h3>
-      <button>email</button>
-      <p><li>07938 107 621</li></p>
-      <p>22b Crawfurd Street Greenock, Scotland</p>
-    </section>
+  return <main id="mainFooter">
+    <div className="contactRow">
+      <div className="iconGroup">
+        <img className="contactIcon" src={email} alt="email"></img>
+        <a href="mailto:rhona@cbtinverclyde.com">email</a>
+      </div>
+      <div className="iconGroup">
+        <img className="contactIcon" src={phone} alt="phone"></img>
+        <p>07938 107 621</p>
+      </div>
+      <div className="iconGroup">
+        <img className="contactIcon" src={address} alt="address"></img>
+        <p>22b Crawfurd Street Greenock, Scotland</p>
+      </div>
+    </div>
   </main>
 }
 
