@@ -1,4 +1,6 @@
 import React from 'react'
+import hands from '../styles/hands.png'
+
 
 const Fees = () => {
   return <main className="mainFees">
@@ -13,6 +15,7 @@ const Fees = () => {
         dependent on client circumstances
       </small>
     </section>
+    <img id="hands" src={hands} alt="hands"></img>
     <aside className="asideTerms">
       <section className="terms">
         <h1>Terms and Conditions</h1>

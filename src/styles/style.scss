@@ -168,11 +168,18 @@ align-items: center;
   padding-bottom: 30px;
   width:40%;
   padding:20px;
-  height: 85%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
+  text-justify:distribute;
+  small{
+    color: var(--background);
+    background-color:var(--dark);
+    padding:20px;
+    border-radius: 4px;
+  }
 }
 .mainFees {
   height:100vh;
@@ -180,14 +187,42 @@ align-items: center;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  margin: 20px;
 }
 .asideTerms{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   padding: 20px;
-  height: 85%;
+  height: 75%;
   width:40%;
-  align-items: space-evenly;
+  
 }
+#hands {
+  width: 20vw;
+  filter: drop-shadow(3px 6px 4px grey);
+}
+
+//SERVICES
+
+#mainServices {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: space-evenly;
+ 
+}
+.serviceImg {
+  width: 20vw;
+  filter: drop-shadow(3px 6px 4px grey);
+}
+
+.service {
+  margin: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  // padding:20px;
+
+}
+
 
