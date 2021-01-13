@@ -1,9 +1,10 @@
 import React from 'react'
 import hands from '../styles/hands.png'
-
+import terms from '../styles/terms.png'
 
 const Fees = () => {
   return <main className="mainFees">
+  <div className="termsImage">
     <section className="fees">
       <h1>Fees</h1>
       <p>1:1 sessions | £45</p>
@@ -16,7 +17,8 @@ const Fees = () => {
       </small>
     </section>
     <img id="hands" src={hands} alt="hands"></img>
-    <aside className="asideTerms">
+    </div>
+  <div className="termsImage">
       <section className="terms">
         <h1>Terms and Conditions</h1>
         <p>
@@ -35,7 +37,9 @@ const Fees = () => {
         prior to writing.
         </p>
       </section>
-    </aside>
+      <img id="hands" src={terms} alt="hands"></img>
+  </div>
+    
   </main>
 }
 
