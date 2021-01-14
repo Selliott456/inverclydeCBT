@@ -17,7 +17,7 @@ const Fees = () => {
       </small>
     </section>
     <img id="hands" src={hands} alt="hands"></img>
-    </div>
+  </div>
   <div className="termsImage">
       <section className="terms">
         <h1>Terms and Conditions</h1>
