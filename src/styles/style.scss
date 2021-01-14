@@ -113,6 +113,20 @@ h1, h2, h3, h4, h5, h6{
   
 }
 
+.withclock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.times{
+  display: flex;
+  flex-direction: column;
+}
+#clock {
+  width: 40%;
+}
+
 //home
 
 #homeMain {

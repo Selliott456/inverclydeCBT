@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import feelings from '../styles/feelings.png'
-
+import clock from '../styles/clock.png'
 
 
 const Home = () => {
@@ -26,11 +26,16 @@ const Home = () => {
     </div>
     <section id="openingHours">
       <h3 id="opening">Opening Hours</h3>
-      <p className="listItem">Mon: 9:00am - 5:00pm</p>
-      <p className="listItem">Tue: 1:00pm - 8:00pm </p>
-      <p className="listItem">Wed: CLOSED </p>
-      <p className="listItem">Thu: 9:00am - 5:00pm </p>
-      <p className="listItem">Fri: 9:00am - 1:00pm </p>
+      <div className="withclock">
+        <img src={clock} alt="clock" id="clock"></img>
+        <div className="times">
+        <p className="listItem">Mon: 9:00am - 5:00pm</p>
+        <p className="listItem">Tue: 1:00pm - 8:00pm </p>
+        <p className="listItem">Wed: CLOSED </p>
+        <p className="listItem">Thu: 9:00am - 5:00pm </p>
+        <p className="listItem">Fri: 9:00am - 1:00pm </p>
+        </div>
+      </div>
     </section>
     <section id="contact">
       <h3>Contact</h3>
