@@ -3,8 +3,9 @@ import willwork from '../styles/willwork.png'
 
 const Willwork = () => {
   return <main >
-    <div className="mainWillWork">
     <h1>Will CBT Work For Me?</h1>
+    <div className="mainWillWork">
+    
     <section >
       <p className="questionPara">CBT suits individuals with all sorts of problems
       – including (but not limited to) depression, anxiety, phobias, difficult

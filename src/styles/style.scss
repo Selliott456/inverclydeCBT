@@ -28,7 +28,7 @@ body {
 
 h1, h2, h3, h4, h5, h6{
   color: var(--dark);
-  margin: 50px;
+  margin:20px;
 }
 .row{
   display: flex;
@@ -78,17 +78,18 @@ h1, h2, h3, h4, h5, h6{
 }
 
 //Landing
-.landingImg {
-  filter: drop-shadow(3px 10px 4px grey);
-}
+
 #landing {
   display:flex;
   flex-direction: row;
+  justify-items: center;
+  width: 80vw;
 }
 #landingRight {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: -50px;
 }
 #landingButton {
   background-color: var(--mid);
@@ -98,6 +99,18 @@ h1, h2, h3, h4, h5, h6{
   margin: -120px;
   border-radius: 5px;
   z-index: 1
+}
+.landingContent {
+ 
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  margin:auto;
+}
+.landingImg {
+  filter: drop-shadow(3px 10px 4px grey);
+  width: 400px;
+  
 }
 
 //home
@@ -281,7 +294,7 @@ width: 100vw;
 .mainWillWork {
   margin:auto;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  width: 70vw;
+  width: 80vw;
   padding: 30px;
 }
 .questionPara {
