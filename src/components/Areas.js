@@ -55,8 +55,8 @@ const Areas = () => {
 
 
   return <main id="mainAreas">
+    <h1>Areas of Counselling</h1>
     <section className="areasExplain">
-      <h1>Areas of Counselling</h1>
       <p>These areas list what can be covered during counselling at CBT Inverclyde.
       However, the list is in no way fixed or exhaustive. If in doubt, it is worth
       getting in contact!

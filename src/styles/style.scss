@@ -140,6 +140,9 @@ h1, h2, h3, h4, h5, h6{
   background-color: var(--dark);
   color: var(--background);
   padding:50px;
+  width: 80vw;
+  margin: auto;
+  border-radius: 4px;
 }
 #contact {
   margin: 100px;
@@ -260,7 +263,7 @@ width: 100vw;
   flex-direction: column;
   justify-items: space-evenly;
   width: 60vw;
-  margin: 50px 100px 80px 100px;
+  margin-bottom: 40px;;
 }
 #getInTouch {
   margin: 30px;
