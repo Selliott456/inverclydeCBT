@@ -4,7 +4,7 @@ import terms from '../styles/terms.png'
 
 const Fees = () => {
   return <main className="mainFees">
-  <div className="termsImage">
+    <div className="feesHands">
     <section className="fees">
       <h1>Fees</h1>
       <p>1:1 sessions | £45</p>
@@ -14,32 +14,29 @@ const Fees = () => {
       <small>
         fees are subject to review and can be discussed
         dependent on client circumstances
-      </small>
+        </small>
     </section>
     <img id="hands" src={hands} alt="hands"></img>
-  </div>
-  <div className="termsImage">
-      <section className="terms">
-        <h1>Terms and Conditions</h1>
-        <p>
-          Cancellations can be made upto 24 hours before the appointment.
-          Appointments cancelled after this point will be charged in full
+    </div>
+    <section className="terms">
+      <h1>Terms and Conditions</h1>
+      <p>
+        Cancellations can be made upto 24 hours before the appointment.
+        Appointments cancelled after this point will be charged in full
         </p>
-        <p>
-          Unfortunately, sessions cannot be extended due to late-coming
-          and will be charged in full, so please try to be punctual!
+      <p>
+        Unfortunately, sessions cannot be extended due to late-coming
+        and will be charged in full, so please try to be punctual!
         </p>
-      </section>
-      <section className="medicalReport">
-        <h1>Medical Reports</h1>
-        <p>Should you require a medical report or letter, it will be
-        charged at the session rate stated above. Prices will be agreed
-        prior to writing.
+      <h1>Medical Reports</h1>
+      <p>Should you require a medical report or letter, it will be
+      charged at the session rate stated above. Prices will be agreed
+      prior to writing.
         </p>
-      </section>
-      <img id="hands" src={terms} alt="hands"></img>
-  </div>
-    
+    </section>
+    <img id="hands" src={terms} alt="hands"></img>
+
+
   </main>
 }
 

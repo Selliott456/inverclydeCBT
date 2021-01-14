@@ -1,6 +1,5 @@
-// import React, { useState } from 'react'
-// import ReactCardFlip from 'react-card-flip'
-import React from 'react'
+import React, { useState } from 'react'
+// import React from 'react'
 
 const areas = [
   'Abortion',
@@ -50,46 +49,34 @@ const areas = [
   'Work-related stress '
 ]
 const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+
+
 const Areas = () => {
 
-  // const [isFlipped, setIsFlipped] = useState(false)
-  // 
-  // const handleClick = () => {
-  // setIsFlipped(!isFlipped)
-  // }
 
-  {/* <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical"> */ }
-  {/* <div> */ }
-  {/* <section className="area-front-item"> */ }
-  {/**/ }
-  {/* <button className="front-flip-button" onClick={handleClick}>A</button> */ }
-  {/* </section> */ }
-  {/* </div> */ }
-  {/* <div> */ }
-  {/* <section className="area-back-item"> */ }
-  {/* <h3> this is the other side</h3> */ }
-  {/* <button className="front-flip-button" onClick={handleClick}>click</button> */ }
-  {/* </section> */ }
-  {/* </div> */ }
-  {/* </ReactCardFlip> */ }
-
-  return <main>
-    {alphabet.map((letter, index) => {
-      console.log(letter)
-      return <div key={index}>
-        <details >
-          <summary>
-            {letter}
-          </summary>
-          {areas.filter(area => area.charAt(0) === letter).map((filteredArea, index) => {
-            return <div key={index}>
-              <p>{filteredArea}</p>
-            </div>
-          })}
-        </details>
-      </div>
-    })}
+  return <main id="mainAreas">
+    <section className="areasExplain">
+      <h1>Areas of Counselling</h1>
+      <p>These areas list what can be covered during counselling at CBT Inverclyde.
+      However, the list is in no way fixed or exhaustive. If in doubt, it is worth
+      getting in contact!
+      </p>
+      <button id="getInTouch">Get in Touch</button>
+    </section>
+    <section className="dropdownSection">
+      <details>
+        <summary>
+          See All Areas of Counselling
+      </summary>
+        {areas.map((area, index) => {
+          return <div key={index}>
+            <p>{area}</p>
+          </div>
+        })}
+      </details>
+    </section>
   </main>
+
 }
 
 
