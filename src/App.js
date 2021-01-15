@@ -12,11 +12,12 @@ import justhead from './styles/head.png'
 import justtext from './styles/justtext.png'
 import Fade from 'react-reveal/Fade'
 import Mobilenav from './components/Mobilenav'
+import fulllogo from './styles/fulllogo.png'
 
 const App = () => (
   <BrowserRouter>
-  <Mobilenav pageWrapId={"page-wrap"} outerContainerId={"App"} />
-    <Navbar/>
+    <Mobilenav pageWrapId={"page-wrap"} outerContainerId={"App"} />
+    <Navbar />
     <Switch>
       <Route exact path="/" component={Landing} />
       <Route exact path="/home" component={Home} />
@@ -41,6 +42,10 @@ const Landing = () => {
       <Fade left>
         <img id="head" className="landingImg" src={justhead}></img>
       </Fade>
+    </div>
+    <div id="mobileLanding">
+      <img id="text" className="landingImg" src={fulllogo}></img>
+      <Link id="landingButton" to="/home">Come in!</Link>
     </div>
   </main>
 }
