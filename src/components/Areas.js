@@ -61,7 +61,7 @@ const Areas = () => {
       However, the list is in no way fixed or exhaustive. If in doubt, it is worth
       getting in contact!
       </p>
-      <button id="getInTouch">Get in Touch</button>
+      <a href="mailto:rhona@cbtinverclyde.com" className="button">Get in Touch</a>
     </section>
     <section className="dropdownSection">
       <details>

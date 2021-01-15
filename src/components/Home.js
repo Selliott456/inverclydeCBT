@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import feelings from '../styles/feelings.png'
 import clock from '../styles/clock.png'
 import ReactCardFlip from 'react-card-flip'
-import { Carousel } from 'react-responsive-carousel'
+
 
 
 
@@ -106,23 +106,7 @@ const Home = () => {
       </ReactCardFlip>
 
     </section>
-    <section>
-      <h2>Testimonials</h2>
-      <Carousel infiniteLoop useKeyboardArrows autoPlay>
-        <div>
-          <img src={pizza1} />
-        </div>
-        <div>
-          <img src={pizza2} />
-        </div>
-        <div>
-          <img src={pizza3} />
-        </div>
-        <div>
-          <img src={pizza4} />
-        </div>
-      </Carousel>
-    </section>
+ 
   </main >
 }
 
