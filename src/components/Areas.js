@@ -55,10 +55,10 @@ const Areas = () => {
 
 
   return <main id="mainAreas">
-    <h1>Therapies Offered</h1>
+    <h1>Conditions and Behaviours Treated by Therapy</h1>
     <section className="areasExplain">
-      <p>These areas list what can be covered during therapy at CBT Inverclyde.
-      However, the list is in no way fixed or exhaustive. If in doubt, it is worth
+      <p>This list details conditions and behaviours treated at CBT Inverclyde.
+      However, it is in no way fixed or exhaustive. If in doubt, it is worth
       getting in contact!
       </p>
       <a href="mailto:rhona@cbtinverclyde.com" className="button">Get in Touch</a>

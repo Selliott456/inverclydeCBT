@@ -152,7 +152,7 @@ p {
   justify-content: center;
 }
 #feelings {
-  width: 30%;
+  width: 300px;
   margin:0;
   filter: drop-shadow(3px 6px 4px grey);
 }
@@ -552,9 +552,6 @@ display: none;
   }
   .contactRow {
   flex-direction: column;
-  }
-  #feelings {
-    width: 200px;
   }
  
 }
