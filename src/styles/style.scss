@@ -488,10 +488,10 @@ display: none;
     display: none;
   }
   #mobileLanding {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
   }
   #landingButton {
     margin: 0;
@@ -501,9 +501,9 @@ display: none;
   }
   .mobileLandingImage {
     height: 400px;
+    margin-top: 30px;
   }
   .feelingsRow {
-   
     flex-direction: column;
   }
   .feelingsWithLink {
