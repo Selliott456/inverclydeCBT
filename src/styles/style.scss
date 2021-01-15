@@ -412,7 +412,7 @@ width: 100vw;
   /* Our sidebar item styling */
   text-decoration: none;
   margin-bottom: 10px;
-  color: #d1d1d1;
+  color: var(--dark);
   transition: color 0.2s;
 }
 
@@ -434,7 +434,7 @@ width: 100vw;
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: var(--mid);
 }
 
 /* Position and sizing of clickable cross button */
@@ -445,12 +445,12 @@ width: 100vw;
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: var(--dark);
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: var(--mid);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -462,7 +462,7 @@ width: 100vw;
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
+  color: var(--dark);
 }
 
 /* Styling of overlay */
@@ -526,6 +526,9 @@ display: none;
     ul {
       margin-left: -40px;
     }
+  }
+  .feesHands {
+    flex-direction: column;
   }
  
 }
