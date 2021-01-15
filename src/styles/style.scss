@@ -531,5 +531,16 @@ display: none;
   .feesHands {
     flex-direction: column;
   }
+  .withclock {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    #clock {
+      margin:auto;
+    }
+  }
+  #rhonaPhoto {
+    height: 250px;
+  }
  
 }

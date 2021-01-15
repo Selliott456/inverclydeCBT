@@ -52,7 +52,7 @@ const Home = () => {
         <section className="area-front-item">
           <div className="titlePhoto">
             <h3>Rhona McLaughlin</h3>
-            <img src={clock} alt="rhonaPhoto"></img>
+            <img id="rhonaPhoto" src={clock} alt="rhonaPhoto"></img>
           </div>
           <div className="paraButton">
             <p>I am a fully qualified and accredited Cognitive Behavioural
