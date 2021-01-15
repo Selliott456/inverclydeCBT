@@ -1,5 +1,7 @@
 import React from 'react'
 import { slide as Menu } from 'react-burger-menu'
+import { Link } from 'react-router-dom'
+
 
 const Mobilenav = () => {
 
@@ -7,11 +9,11 @@ const Mobilenav = () => {
 
   return <div id="mobileNav">
     <Menu >
-      <a className="menu-item" href="/home">home</a>
-      <a className="menu-item" href="/services">services</a>
-      <a className="menu-item" href="/areas">Areas of Counselling</a>
-      <a className="menu-item" href="/willwork">Will CBT Work For Me?</a>
-      <a className="menu-item" href="/fees">Fees</a>
+      <Link className="menu-item" to="/home">Home</Link>
+      <Link className="menu-item" to="/services">Services</Link>
+      <Link className="menu-item" to="/areas">Areas of Counselling</Link>
+      <Link className="menu-item" to="/willwork">Will CBT Work For Me?</Link>
+      <Link className="menu-item" to="/fees">Fees</Link>
     </Menu>
   </div>
 }
