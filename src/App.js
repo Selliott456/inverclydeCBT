@@ -43,10 +43,12 @@ const Landing = () => {
         </div>
       </Fade>
     </div>
-    <div id="mobileLanding">
-      <img id="text" className="mobileLandingImage" src={fulllogo}></img>
-      <Link id="landingButton" to="/home">Come in!</Link>
-    </div>
+    <Fade right>
+      <div id="mobileLanding">
+        <img id="text" className="mobileLandingImage" src={fulllogo}></img>
+        <Link id="landingButton" to="/home">Come in!</Link>
+      </div>
+    </Fade>
   </main>
 }
 
