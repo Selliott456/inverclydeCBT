@@ -9,7 +9,7 @@ const Navbar = () => {
       <Link to="/home"><img id="navLogo" src={logo} alt="logo"></img></Link>
       <Link className="navButton" to="/home">Home</Link>
       <Link className="navButton" to="/services">Services</Link>
-      <Link className="navButton" to="/areas">Areas of Counselling</Link>
+      <Link className="navButton" to="/areas">Conditions and Therapy</Link>
       <Link className="navButton" to="/willwork">Will CBT Work For Me?</Link>
       <Link className="navButton" to="/fees">Fees</Link>
     </ul>

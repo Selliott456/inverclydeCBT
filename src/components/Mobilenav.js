@@ -11,7 +11,7 @@ const Mobilenav = () => {
     <Menu >
       <Link className="menu-item" to="/home">Home</Link>
       <Link className="menu-item" to="/services">Services</Link>
-      <Link className="menu-item" to="/areas">Areas of Counselling</Link>
+      <Link className="menu-item" to="/areas">Conditions and Therapy</Link>
       <Link className="menu-item" to="/willwork">Will CBT Work For Me?</Link>
       <Link className="menu-item" to="/fees">Fees</Link>
     </Menu>

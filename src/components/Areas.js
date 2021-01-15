@@ -55,9 +55,9 @@ const Areas = () => {
 
 
   return <main id="mainAreas">
-    <h1>Areas of Counselling</h1>
+    <h1>Therapies Offered</h1>
     <section className="areasExplain">
-      <p>These areas list what can be covered during counselling at CBT Inverclyde.
+      <p>These areas list what can be covered during therapy at CBT Inverclyde.
       However, the list is in no way fixed or exhaustive. If in doubt, it is worth
       getting in contact!
       </p>
@@ -66,7 +66,7 @@ const Areas = () => {
     <section className="dropdownSection">
       <details>
         <summary>
-          See All Areas of Counselling
+          See All Conditons Treated by Therapy
       </summary>
         {areas.map((area, index) => {
           return <div key={index}>
