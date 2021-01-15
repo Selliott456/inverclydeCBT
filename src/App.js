@@ -33,18 +33,18 @@ const App = () => (
 const Landing = () => {
   return <main id="landing">
     <div className="landingContent">
+      <Fade left>
+        <img id="head" className="landingImg" src={justhead}></img>
+      </Fade>
       <Fade right>
         <div id="landingRight">
           <img id="text" className="landingImg" src={justtext}></img>
           <Link id="landingButton" to="/home">Come in!</Link>
         </div>
       </Fade>
-      <Fade left>
-        <img id="head" className="landingImg" src={justhead}></img>
-      </Fade>
     </div>
     <div id="mobileLanding">
-      <img id="text" className="landingImg" src={fulllogo}></img>
+      <img id="text" className="mobileLandingImage" src={fulllogo}></img>
       <Link id="landingButton" to="/home">Come in!</Link>
     </div>
   </main>

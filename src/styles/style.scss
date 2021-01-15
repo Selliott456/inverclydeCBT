@@ -100,41 +100,34 @@ p {
 
 //Landing
 
-#landing {
-  display:flex;
-  flex-direction: row;
-  justify-items: center;
-  width: 80vw;
-  height:80vh;
-  margin: auto;
-}
-#landingRight {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: -50px;
-}
 #landingButton {
   background-color: var(--mid);
   text-decoration: none;
   color: var(--dark);
   padding: 15px 40px;
-  margin: -120px;
   border-radius: 5px;
   z-index: 1
 }
-.landingContent {
-  width: 80vw;
-  display: flex;
-  flex-direction: row;
-  justify-items: space-evenly;
-  
+#landing {
+  height: 80vh;
+  margin: auto;
 }
 .landingImg {
-  filter: drop-shadow(3px 10px 4px grey);
-  width: 400px; 
+  width: 300px;
 }
-
+.landingContent {
+  margin-left: -50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 150px;
+}
+#landingRight {
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content: center;
+}
 .withclock {
   display: flex;
   flex-direction: row;
@@ -494,6 +487,7 @@ display: none;
     display: none;
   }
   #mobileLanding {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -504,5 +498,34 @@ display: none;
   #nav {
     margin-top: -20px;
   }
-  
+  .mobileLandingImage {
+    height: 400px;
+  }
+  .feelingsRow {
+   
+    flex-direction: column;
+  }
+  .feelingsWithLink {
+    width:80%;
+  }
+  .area-front-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .area-back-item {
+    flex-direction: column;
+  }
+  .qualifications {
+    width: 60vw;
+    ul {
+      margin-left: - 40px;
+    }
+  }
+  .training {
+    width: 60vw;
+    ul {
+      margin-left: -40px;
+    }
+  }
+ 
 }

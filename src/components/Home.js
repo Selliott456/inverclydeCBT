@@ -106,7 +106,7 @@ const Home = () => {
       </ReactCardFlip>
 
     </section>
- 
+
   </main >
 }
 
