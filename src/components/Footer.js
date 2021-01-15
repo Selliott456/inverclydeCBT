@@ -8,15 +8,15 @@ const Footer = () => {
     <div className="contactRow">
       <div className="iconGroup">
         <img className="contactIcon" src={email} alt="email"></img>
-        <a href="mailto:rhona@cbtinverclyde.com">email</a>
+        <a className="footerPara" href="mailto:rhona@cbtinverclyde.com">email</a>
       </div>
       <div className="iconGroup">
         <img className="contactIcon" src={phone} alt="phone"></img>
-        <p>07938 107 621</p>
+        <p className="footerPara">07938 107 621</p>
       </div>
       <div className="iconGroup">
         <img className="contactIcon" src={address} alt="address"></img>
-        <p>22b Crawfurd Street Greenock, Scotland</p>
+        <p className="footerPara">22b Crawfurd Street | Greenock | Scotland</p>
       </div>
     </div>
   </main>

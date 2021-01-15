@@ -30,6 +30,9 @@ h1, h2, h3, h4, h5, h6{
   color: var(--dark);
   margin:20px;
 }
+p {
+  font-size: 18px;
+}
 .row{
   display: flex;
   flex-direction: row;
@@ -48,6 +51,11 @@ h1, h2, h3, h4, h5, h6{
 
 
 //Navbar
+#nav {
+  background-color: var(--dark);
+  margin-top: - 20px;
+  width: 100vw;
+}
 .navButton {
   text-decoration: none;
   color: var(--background);
@@ -66,7 +74,7 @@ h1, h2, h3, h4, h5, h6{
   text-decoration: none;
 }
 #navLogo {
-  height: 10vh;
+  height: 15vh;
 }
 
 //Footer
@@ -74,7 +82,17 @@ h1, h2, h3, h4, h5, h6{
 #mainFooter {
   display:flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  background-color: var(--dark);
+  margin-top: 30px;
+}
+.footerPara {
+  text-decoration: none;
+  color: var(--background);
+  font-size: 16px;
+}
+.iconGroup {
+  margin: 2vw;
 }
 
 //Landing
@@ -84,6 +102,7 @@ h1, h2, h3, h4, h5, h6{
   flex-direction: row;
   justify-items: center;
   width: 80vw;
+  margin: auto;
 }
 #landingRight {
   display: flex;
@@ -101,11 +120,11 @@ h1, h2, h3, h4, h5, h6{
   z-index: 1
 }
 .landingContent {
- 
+  width: 80vw;
   display: flex;
   flex-direction: row;
-  justify-items: center;
-  margin:auto;
+  justify-items: space-evenly;
+  
 }
 .landingImg {
   filter: drop-shadow(3px 10px 4px grey);
@@ -125,6 +144,7 @@ h1, h2, h3, h4, h5, h6{
 }
 #clock {
   width: 40%;
+  margin-right: -200px;
 }
 
 //home
@@ -154,10 +174,15 @@ h1, h2, h3, h4, h5, h6{
 }
 .feelingsRow {
   display:flex;
+  padding: 40px;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin: 10vh;
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 #openingHours{
   display:flex;
@@ -171,8 +196,9 @@ h1, h2, h3, h4, h5, h6{
   margin: auto;
   border-radius: 4px;
 }
-#contact {
-  margin: 100px;
+li {
+  list-style: none;
+  margin:auto
 }
 .contactRow {
   display: flex;
@@ -192,6 +218,45 @@ align-items: center;
 #opening {
   color: var(--background);
 }
+
+.aboutPara {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.area-back-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+.qualifications {
+  width: 40vw;
+}
+.training {
+  width: 40vw;
+}
+.titlePhoto {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  justify-content: center;
+}
+.area-front-item {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  justify-items: center;
+}
+#about {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 80vw;
+  margin: 30px auto;
+}
+
 
 //Fees
 .feesHands {
@@ -244,13 +309,15 @@ width: 60vw;
 .serviceImg {
   width: 20vw;
   filter: drop-shadow(3px 6px 4px grey);
+  margin-bottom: 20px;
 }
 
 .service {
-  margin: 40px;
+  margin: auto;
+  border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
-
+  width: 80vw;
+  margin-bottom: 40px;
 }
 
 // AREAS
