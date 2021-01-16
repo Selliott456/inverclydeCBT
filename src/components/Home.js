@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import feelings from '../styles/feelings.png'
 import clock from '../styles/clock.png'
 import ReactCardFlip from 'react-card-flip'
-
+import rhona from '../styles/rhona.jpeg'
 
 
 
@@ -52,7 +52,7 @@ const Home = () => {
         <section className="area-front-item">
           <div className="titlePhoto">
             <h3>Rhona McLaughlin</h3>
-            <img id="rhonaPhoto" src={clock} alt="rhonaPhoto"></img>
+            <img id="rhonaPhoto" src={rhona} alt="rhonaPhoto"></img>
           </div>
           <div className="paraButton">
             <p>I am a fully qualified and accredited Cognitive Behavioural

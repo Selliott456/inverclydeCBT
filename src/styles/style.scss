@@ -223,6 +223,13 @@ align-items: center;
   margin: auto;
   justify-content: space-evenly;
 }
+#rhonaPhoto {
+  width: 40vw;
+  border-radius: 100%;
+}
+.paraButton {
+  margin: 40px;
+}
 .area-back-item {
   display: flex;
   flex-direction: row;
@@ -236,17 +243,9 @@ align-items: center;
 .training {
   width: 40vw;
 }
-.titlePhoto {
-  display: flex;
-  flex-direction: column;
-  width: 50vw;
-  justify-content: center;
-}
+
 .area-front-item {
-  display: flex;
-  flex-direction: row;
-  margin: 30px;
-  justify-items: center;
+  padding: 20px 10vw;
 }
 #about {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -547,9 +546,9 @@ display: none;
       margin:auto;
     }
   }
-  #rhonaPhoto {
-    height: 250px;
-  }
+  // #rhonaPhoto {
+  //   height: 250px;
+  // }
   .contactRow {
   flex-direction: column;
   }
