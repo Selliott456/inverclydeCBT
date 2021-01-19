@@ -112,6 +112,10 @@ p {
 #landing {
   height: 80vh;
   margin: auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .landingImg {
   width: 300px;
@@ -121,7 +125,9 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 150px;
+  align-items: center;
+
+  
 }
 #landingRight {
   display: flex;
