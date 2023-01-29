@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.479e5132.css",
+    "main.js": "/static/js/main.f64dda2d.js",
+    "static/media/rhona.jpeg": "/static/media/rhona.d2dd8ca7e0ef13e18831.jpeg",
+    "static/media/head.png": "/static/media/head.2665ec57d261f0164313.png",
+    "static/media/feelings.png": "/static/media/feelings.2f73cd8b56eee94edee9.png",
+    "static/media/hands.png": "/static/media/hands.b5414e04c237d91243c9.png",
+    "static/media/fulllogo.png": "/static/media/fulllogo.b57342e546769434403a.png",
+    "static/media/logo.png": "/static/media/logo.d2d983fc732f17032640.png",
+    "static/media/cog.png": "/static/media/cog.a6d3e28301fcdb96da12.png",
+    "static/media/willwork.png": "/static/media/willwork.df6df73835578f168d3c.png",
+    "static/media/behaviour.png": "/static/media/behaviour.7dbf50773ff34c31d8b5.png",
+    "static/media/commitment.png": "/static/media/commitment.639281efb642d9bef811.png",
+    "static/media/justtext.png": "/static/media/justtext.7ae3535e66e18b7a8722.png",
+    "static/media/clock.png": "/static/media/clock.17a978f5a5de5ad5e6a2.png",
+    "static/media/terms.png": "/static/media/terms.930a735f80521ea455e1.png",
+    "index.html": "/index.html",
+    "main.479e5132.css.map": "/static/css/main.479e5132.css.map",
+    "main.f64dda2d.js.map": "/static/js/main.f64dda2d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.479e5132.css",
+    "static/js/main.f64dda2d.js"
+  ]
+}
