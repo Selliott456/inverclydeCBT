@@ -39,6 +39,14 @@ const Fees = () => {
             the session rate stated above. Prices will be agreed prior to
             writing.
           </p>
+          <h1>Patient Notes</h1>
+          <p>
+            Patient notes are the property of CBT Inverclyde and can only be
+            released for legal requests with a court order. If information is
+            required by a patient, a chargeable report can be provided. Please
+            note that patient records are only kept for 3 years unless there is
+            a legal request for them to be held longer
+          </p>
         </section>
         <img id="hands" src={terms} alt="hands"></img>
       </div>
