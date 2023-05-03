@@ -55,7 +55,7 @@ const Home = () => {
               <img id="rhonaPhoto" src={rhona} alt="rhonaPhoto"></img>
             </div>
             <div className="paraButton">
-              <p>
+              <p class="aboutPara">
                 I am a fully qualified and accredited Cognitive Behavioural
                 Psychotherapist. I work across all age groups and address issues
                 such as Post Traumatic Stress Disorder, Complex Trauma, Self
