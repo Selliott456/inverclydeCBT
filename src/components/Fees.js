@@ -8,8 +8,7 @@ const Fees = () => {
       <h1>Fees</h1>
       <div className="feesHands">
         <section className="fees">
-          <p>1:1 sessions | £55</p>
-          <p>Couples Sessions | £60</p>
+          <p>1:1 sessions | £60</p>
           <p>Sessions typically last between 45 and 60 minutes</p>
           <p>
             longer sessions can be arranged and will be charged according to the

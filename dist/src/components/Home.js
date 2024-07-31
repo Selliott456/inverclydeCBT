@@ -38,11 +38,13 @@ const Home = () => {
         <div className="withclock">
           <img src={clock} alt="clock" id="clock"></img>
           <div className="times">
-            <p className="listItem">Mon: 9:00am - 5:00pm `(remote only)`</p>
-            <p className="listItem">Tue: 1:00pm - 8:00pm </p>
-            <p className="listItem">Wed: CLOSED </p>
-            <p className="listItem">Thu: 9:00am - 5:00pm </p>
-            <p className="listItem">Fri: 9:00am - 1:00pm </p>
+            <p className="listItem">Mon: 10:00am - 6:00pm `(remote only)`</p>
+            <p className="listItem">Tue: 12:00pm - 7:00pm </p>
+            <p className="listItem">
+              Wed: 10:00am -1 (in person), 2:10pm - 4:30pm (online)
+            </p>
+            <p className="listItem">Thu: Non-bookable </p>
+            <p className="listItem"> CLOSED </p>
           </div>
         </div>
       </section>
