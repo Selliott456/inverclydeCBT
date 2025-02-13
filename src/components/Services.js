@@ -2,6 +2,7 @@ import React from "react";
 import cog from "../styles/cog.png";
 import commitment from "../styles/commitment.png";
 import behaviour from "../styles/behaviour.png";
+import Areas from "./Areas";
 
 const Services = () => {
   return (
@@ -27,6 +28,8 @@ const Services = () => {
           </div>
         </div>
       </div>
+
+      <Areas />
     </main>
   );
 };
