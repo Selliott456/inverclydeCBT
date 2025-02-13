@@ -53,83 +53,109 @@ const Home = () => {
   return (
     <main id="homeMain">
       <div className="heroSection">
-        <div className="logoSection">
-          <img
-            src={fulllogo}
-            alt="CBT Inverclyde"
-            className="heroLogo fadeIn"
-          />
-          <div className="logoSubtitle">
-            <h2 className="fadeIn">
-              Professional Cognitive Behavioural Therapy in Greenock
-            </h2>
+        <div className="heroRow">
+          <div className="logoSection">
+            <img
+              src={fulllogo}
+              alt="CBT Inverclyde"
+              className="heroLogo fadeIn"
+            />
+            <div className="logoSubtitle">
+              <h2 className="fadeIn">
+                Professional Cognitive Behavioural Therapy in Greenock
+              </h2>
+            </div>
           </div>
-        </div>
-        <div className="testimonialSection">
-          <div
-            className="testimonial"
-            style={{
-              opacity: isVisible ? 1 : 0,
-              transition: "opacity 1s ease-in-out",
-            }}
-          >
-            <p className="quote">{testimonials[currentTestimonial].quote}</p>
-            <p className="author">{testimonials[currentTestimonial].author}</p>
+          <div className="quoteSection">
+            <div className="testimonialSection">
+              <div
+                className="testimonial"
+                style={{
+                  opacity: isVisible ? 1 : 0,
+                  transition: "opacity 1s ease-in-out",
+                }}
+              >
+                <p className="quote">
+                  {testimonials[currentTestimonial].quote}
+                </p>
+                <p className="author">
+                  {testimonials[currentTestimonial].author}
+                </p>
+              </div>
+            </div>
+            <a
+              href="mailto:rhona@inver-cbt.co.uk?subject=CBT%20Enquiry"
+              className="heroButton"
+            >
+              Get in Contact
+            </a>
           </div>
         </div>
       </div>
 
       <div className="aboutSection">
-        <div className="aboutContent">
-          <h2>About CBT Inverclyde</h2>
-          <div className="aboutGrid">
-            <div className="openingHours">
-              <h3>Opening Hours</h3>
-              <ul>
-                <li>
-                  Monday: 10:00am - 6:00pm{" "}
-                  <span className="note">(remote only)</span>
-                </li>
-                <li>Tuesday: 12:00pm - 7:00pm</li>
-                <li>
-                  Wednesday: 10:00am - 1:00pm{" "}
-                  <span className="note">(in person)</span>
-                  <br />
-                  <span className="indent">
-                    2:10pm - 4:30pm <span className="note">(online)</span>
-                  </span>
-                </li>
-                <li>
-                  Thursday: <span className="note">Non-bookable</span>
-                </li>
-                <li>Friday - Sunday: Closed</li>
-              </ul>
-              <p className="note">Evening appointments available on request</p>
-            </div>
-            <div className="aboutText">
-              <p>
-                CBT Inverclyde offers professional Cognitive Behavioural Therapy
-                in Greenock. Our approach is evidence-based and focused on
-                helping you develop practical strategies to improve your mental
-                wellbeing.
-              </p>
-              <p>
-                We provide a safe, confidential space where you can work through
-                your challenges with a qualified and experienced therapist.
-              </p>
-            </div>
+        <div className="aboutGrid">
+          <div className="openingHours">
+            <h3>Opening Hours</h3>
+            <ul>
+              <li>
+                Monday: 10:00am - 6:00pm{" "}
+                <span className="note">(remote only)</span>
+              </li>
+              <li>Tuesday: 12:00pm - 7:00pm</li>
+              <li>
+                Wednesday: 10:00am - 1:00pm{" "}
+                <span className="note">(in person)</span>
+                <br />
+                <span className="indent">
+                  2:10pm - 4:30pm <span className="note">(online)</span>
+                </span>
+              </li>
+              <li>
+                Thursday: <span className="note">Non-bookable</span>
+              </li>
+              <li>Friday - Sunday: Closed</li>
+            </ul>
+            <p className="note">Evening appointments available on request</p>
+          </div>
+          <div className="aboutText">
+            <p>
+              CBT Inverclyde offers professional Cognitive Behavioural Therapy
+              in Greenock. Our approach is evidence-based and focused on helping
+              you develop practical strategies to improve your mental wellbeing.
+            </p>
+            <p>
+              We provide a safe, confidential space where you can work through
+              your challenges with a qualified and experienced therapist.
+            </p>
           </div>
         </div>
-        {/* Temporarily commented out until we have the correct image
-        <div className="aboutImage">
-          <img src={about} alt="About CBT Inverclyde" />
+      </div>
+
+      <div className="feelingsRow">
+        <div className="feelingsContent">
+          <div className="feelingsWithLink">
+            <p className="feelingsParagraph">
+              Cognitive Behavioural Therapy (CBT) is based on the idea that your
+              feelings, thoughts and actions are interconnected. people can
+              become trapped in negative cycles without the tools to change
+              negative patterns.
+              <br></br>
+              <br></br>
+              CBT aims to provide patients with practical ways to improve their
+              state of mind and helps them to deal with overwhelming problems in
+              a more positive way.
+            </p>
+            <Link className="button" to="/areas">
+              What can be treated with CBT?
+            </Link>
+          </div>
+          <img src={feelings} alt="feelings" id="feelings"></img>
         </div>
-        */}
       </div>
 
       <div className="therapistSection">
         <div className="therapistContent">
-          <h2>Meet Your Therapist</h2>
           <div className="therapistGrid">
             <div className="therapistInfo">
               <div className="therapistText">

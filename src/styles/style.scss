@@ -83,128 +83,148 @@ body {
   padding: 3rem 2rem;
 
   .heroSection {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2rem;
-    padding: 1.3rem;
-    background: linear-gradient(135deg, white 0%, var(--accent) 100%);
-    margin: 2rem;
-    border-radius: 20px;
-    align-items: center;
+    padding: 4rem 0;
 
-    .testimonialSection {
-      padding: 1.3rem;
-      min-height: 150px;
-      position: relative;
+    .heroRow {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4rem;
+      padding: 0 2rem;
 
-      .testimonial {
-        text-align: left;
-        padding: 0.7rem;
-        animation: testimonialFade 5s ease-in-out;
+      .logoSection {
+        flex: 1;
 
-        .quote {
-          font-size: 1.1rem;
-          font-style: italic;
-          margin-bottom: 0.7rem;
-          line-height: 1.4;
-          color: var(--text);
+        .heroLogo {
+          width: 100%;
+          max-width: 600px;
+          margin-bottom: 2rem;
         }
 
-        .author {
-          font-size: 0.8rem;
-          color: var(--text-light);
+        .logoSubtitle {
+          h2 {
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.4;
+            color: var(--text);
+          }
         }
       }
-    }
 
-    .logoSection {
-      text-align: center;
+      .quoteSection {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
 
-      .heroLogo {
-        width: auto;
-        height: 330px;
-        max-width: none;
-        animation: fadeIn 1s ease-out;
-      }
+        .testimonialSection {
+          width: 100%;
 
-      .logoSubtitle {
-        h2 {
-          color: var(--text);
-          font-size: 0.9rem;
-          font-weight: normal;
-          margin: 0;
-          padding: 0;
-          animation: fadeIn 1s ease-out 0.5s forwards;
-          opacity: 0;
+          .testimonial {
+            .quote {
+              font-size: 1.2rem;
+              line-height: 1.6;
+              margin-bottom: 1rem;
+              font-style: italic;
+              color: var(--text);
+            }
+
+            .author {
+              font-size: 1rem;
+              text-align: right;
+              color: var(--primary);
+            }
+          }
+        }
+
+        .heroButton {
+          display: inline-block;
+          padding: 0.8rem 1.5rem;
+          background: var(--gradient);
+          color: white;
+          text-decoration: none;
+          border-radius: 25px;
+          font-weight: 500;
+          transition: transform 0.2s ease;
+
+          &:hover {
+            transform: translateY(-2px);
+          }
         }
       }
     }
   }
 
   .aboutSection {
-    padding: 2rem;
-    margin: 2rem;
+    padding: 4rem 0;
+    margin: 0 auto;
+    max-width: 1200px;
 
-    .aboutContent {
-      h2 {
-        @include gradient-text;
-        margin-bottom: 2rem;
-        font-size: 2rem;
-      }
+    .aboutGrid {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+      margin: 0 4rem;
 
-      .aboutGrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-        align-items: start;
+      .openingHours {
+        width: 50%;
+        background: white;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px var(--shadow);
 
-        .aboutText {
-          p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-            color: var(--text);
+        h3 {
+          color: var(--primary);
+          margin-bottom: 1.5rem;
+          font-size: 1.3rem;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--accent);
+            font-size: 1rem;
+            line-height: 1.4;
 
             &:last-child {
-              margin-bottom: 0;
+              border-bottom: none;
+              padding-bottom: 0;
+            }
+
+            .note {
+              font-size: 0.9rem;
+            }
+
+            .indent {
+              margin-left: 1.5rem;
+              display: block;
             }
           }
         }
 
-        .openingHours {
-          padding: 1.5rem;
-          background: white;
-          border-radius: 15px;
-          box-shadow: 0 10px 20px var(--shadow);
+        .note {
+          font-size: 0.9rem;
+          margin-top: 1rem;
+        }
+      }
 
-          h3 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-          }
+      .aboutText {
+        width: 50%;
 
-          ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        p {
+          font-size: 1.1rem;
+          line-height: 1.6;
+          margin-bottom: 1.5rem;
 
-            li {
-              padding: 0.5rem 0;
-              border-bottom: 1px solid var(--accent);
-              color: var(--text);
-              font-size: 1rem;
-
-              &:last-child {
-                border-bottom: none;
-              }
-            }
-          }
-
-          .note {
-            margin-top: 1rem;
-            font-size: 0.9rem;
-            color: var(--text-light);
-            font-style: italic;
+          &:last-child {
+            margin-bottom: 0;
           }
         }
       }
@@ -246,105 +266,55 @@ body {
   }
 
   .feelingsRow {
-    margin-top: 0;
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 4rem;
-    align-items: center;
-    margin-bottom: 4rem;
-
-    img {
-      width: 100%;
-      border-radius: 20px;
-      box-shadow: 0 20px 40px var(--shadow);
-      transform: rotate(-4deg);
-    }
-  }
-
-  .feelingsWithLink {
-    .feelingsParagraph {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-      color: var(--text);
-    }
-
-    .button {
-      display: inline-block;
-      background: var(--gradient);
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px var(--shadow);
-
-      &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px var(--shadow);
-      }
-    }
-  }
-
-  #openingHours {
-    background: white;
-    border-radius: 20px;
-    padding: 2.5rem;
-    box-shadow: 0 20px 40px var(--shadow);
-    margin-bottom: 4rem;
-
-    #opening {
-      color: var(--primary);
-      font-size: 1.8rem;
-      margin-bottom: 2rem;
-    }
-
-    .withclock {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 3rem;
-      align-items: start;
-
-      #clock {
-        width: 80px;
-      }
-
-      .times {
-        .listItem {
-          padding: 0.8rem 0;
-          border-bottom: 1px solid var(--accent);
-
-          &:last-child {
-            border-bottom: none;
-          }
-        }
-      }
-    }
-  }
-
-  .site-header {
-    text-align: center;
-    padding: 0;
+    padding: 4rem 0;
     margin: 0 auto;
     max-width: 1200px;
 
-    .site-title {
-      font-family: var(--font-heading);
-      font-size: 4rem;
-      font-weight: 700;
-      color: var(--primary);
-      letter-spacing: -0.02em;
-      margin: 0;
-      padding: 0;
+    .feelingsContent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+      margin: 0 4rem;
+
+      .feelingsWithLink {
+        width: 66%;
+
+        .feelingsParagraph {
+          font-size: 1.1rem;
+          line-height: 1.6;
+          margin-bottom: 2rem;
+          max-width: 100%;
+        }
+
+        .button {
+          display: inline-block;
+          padding: 0.8rem 1.5rem;
+          background: var(--gradient);
+          color: white;
+          text-decoration: none;
+          border-radius: 25px;
+          font-weight: 500;
+          transition: transform 0.2s ease;
+
+          &:hover {
+            transform: translateY(-2px);
+          }
+        }
+      }
+
+      #feelings {
+        width: 33%;
+        max-width: 500px;
+        transform: rotate(-5deg);
+        border-radius: 15px;
+        box-shadow: 0 10px 20px var(--shadow);
+      }
     }
   }
 
-  .homeContent {
-    // ... existing styles
-  }
-
   .therapistSection {
-    padding: 0;
+    padding: 4rem 0;
     margin: 0 auto;
     max-width: 1200px;
 
@@ -354,12 +324,6 @@ body {
       padding: 2rem;
       border-radius: 15px;
       box-shadow: 0 10px 20px var(--shadow);
-
-      h2 {
-        @include gradient-text;
-        margin-bottom: 2rem;
-        font-size: 2rem;
-      }
 
       .therapistGrid {
         display: flex;
@@ -472,6 +436,25 @@ body {
   }
 
   @media (max-width: 1024px) {
+    .heroSection {
+      .heroRow {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+
+        .logoSection {
+          .heroLogo {
+            max-width: 500px;
+          }
+        }
+
+        .quoteSection {
+          width: 100%;
+          max-width: 600px;
+        }
+      }
+    }
+
     .therapistSection {
       .therapistContent {
         .therapistGrid {
@@ -500,9 +483,52 @@ body {
         }
       }
     }
+
+    .aboutSection {
+      .aboutGrid {
+        flex-direction: column;
+
+        .openingHours,
+        .aboutText {
+          width: 100%;
+        }
+      }
+    }
+
+    .feelingsRow {
+      padding: 3rem 0;
+
+      .feelingsContent {
+        flex-direction: column;
+        text-align: center;
+
+        .feelingsWithLink {
+          width: 100%;
+        }
+
+        #feelings {
+          width: 80%;
+          transform: none;
+        }
+      }
+    }
   }
 
   @media (max-width: 768px) {
+    .heroSection {
+      padding: 3rem 1rem;
+
+      .heroRow {
+        gap: 2rem;
+
+        .logoSection {
+          .heroLogo {
+            max-width: 400px;
+          }
+        }
+      }
+    }
+
     .therapistSection {
       margin: 1rem;
 
@@ -520,6 +546,27 @@ body {
               }
             }
           }
+        }
+      }
+    }
+
+    .aboutSection {
+      margin: 1rem;
+
+      .aboutGrid {
+        margin: 0 1.5rem;
+      }
+    }
+
+    .feelingsRow {
+      margin: 1rem;
+      padding: 2rem 0;
+
+      .feelingsContent {
+        margin: 0 1.5rem;
+
+        #feelings {
+          width: 100%;
         }
       }
     }
@@ -652,18 +699,21 @@ body {
     }
 
     .heroSection {
-      grid-template-columns: 1fr;
-      margin: 1rem;
+      padding: 3rem 1rem;
 
-      .testimonialSection {
-        order: 2;
-      }
+      .heroRow {
+        gap: 2rem;
 
-      .logoSection {
-        order: 1;
+        .logoSection {
+          .heroLogo {
+            max-width: 300px;
+          }
 
-        .heroLogo {
-          height: 200px;
+          .logoSubtitle {
+            h2 {
+              font-size: 1.2rem;
+            }
+          }
         }
       }
     }
@@ -671,11 +721,9 @@ body {
     .aboutSection {
       margin: 1rem;
 
-      .aboutContent {
-        .aboutGrid {
-          grid-template-columns: 1fr;
-          gap: 2rem;
-        }
+      .aboutGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
       }
     }
 
