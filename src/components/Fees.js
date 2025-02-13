@@ -4,7 +4,7 @@ import terms from "../styles/terms.png";
 
 const Fees = () => {
   return (
-    <main className="mainFees">
+    <main id="mainFees">
       <h1>Fees</h1>
       <div className="feesHands">
         <section className="fees">
@@ -23,7 +23,7 @@ const Fees = () => {
       </div>
       <div className="med">
         <section className="terms">
-          <h1>Terms and Conditions</h1>
+          <h2>Terms and Conditions</h2>
           <p>
             Cancellations can be made upto 24 hours before the appointment.
             Appointments cancelled after this point will be charged in full
@@ -32,13 +32,13 @@ const Fees = () => {
             Unfortunately, sessions cannot be extended due to late-coming and
             will be charged in full, so please try to be punctual!
           </p>
-          <h1>Medical Reports</h1>
+          <h2>Medical Reports</h2>
           <p>
             Should you require a medical report or letter, it will be charged at
             the session rate stated above. Prices will be agreed prior to
             writing.
           </p>
-          <h1>Patient Notes</h1>
+          <h2>Patient Notes</h2>
           <p>
             Patient notes are the property of CBT Inverclyde and can only be
             released for legal requests with a court order. If information is
