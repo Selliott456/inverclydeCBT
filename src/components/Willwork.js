@@ -18,8 +18,11 @@ const Willwork = () => {
               is individualised and collaborative meaning the client feels
               empowered with regards to their treatment and progress.
             </p>
-            <a href="mailto:rhona@cbtinverclyde.com" className="button">
-              Get Started
+            <a
+              href="mailto:rhona@inver-cbt.co.uk?subject=CBT%20Enquiry"
+              className="button"
+            >
+              Get in Touch
             </a>
           </div>
           <img src={willwork} alt="question" className="willImage" />

@@ -9,23 +9,23 @@ import fulllogo from "../styles/fulllogo.png";
 const testimonials = [
   {
     quote:
-      "Rhona helped me understand my anxiety and gave me the tools to manage it effectively.",
-    author: "Client, 2023",
+      "'Rhona helped me understand my anxiety and gave me the tools to manage it effectively.'",
+    author: "- Sarah",
   },
   {
     quote:
-      "Professional, understanding and really helped me work through my issues. Highly recommend.",
-    author: "Client, 2023",
+      "'Professional, understanding and really helped me work through my issues. Highly recommend.'",
+    author: "- Allen",
   },
   {
     quote:
-      "CBT Inverclyde changed my perspective on therapy. The techniques I learned continue to help me daily.",
-    author: "Client, 2023",
+      "'CBT Inverclyde changed my perspective on therapy. The techniques I learned continue to help me daily.'",
+    author: "- Emily",
   },
   {
     quote:
-      "Rhona's approach is both professional and compassionate. I felt understood and supported throughout.",
-    author: "Client, 2023",
+      "'Rhona's approach is both professional and compassionate. I felt understood and supported throughout.'",
+    author: "- Elliott",
   },
 ];
 
@@ -60,11 +60,6 @@ const Home = () => {
               alt="CBT Inverclyde"
               className="heroLogo fadeIn"
             />
-            <div className="logoSubtitle">
-              <h2 className="fadeIn">
-                Professional Cognitive Behavioural Therapy in Greenock
-              </h2>
-            </div>
           </div>
           <div className="quoteSection">
             <div className="testimonialSection">
@@ -87,7 +82,7 @@ const Home = () => {
               href="mailto:rhona@inver-cbt.co.uk?subject=CBT%20Enquiry"
               className="heroButton"
             >
-              Get in Contact
+              Get in Touch
             </a>
           </div>
         </div>
@@ -146,7 +141,7 @@ const Home = () => {
               state of mind and helps them to deal with overwhelming problems in
               a more positive way.
             </p>
-            <Link className="button" to="/areas">
+            <Link className="button" to="/services">
               What can be treated with CBT?
             </Link>
           </div>

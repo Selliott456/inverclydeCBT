@@ -73,6 +73,11 @@ body {
       background: var(--accent);
       color: var(--primary);
     }
+
+    &.active {
+      background: var(--accent);
+      color: var(--primary);
+    }
   }
 }
 
@@ -83,8 +88,6 @@ body {
   padding: 3rem 2rem;
 
   .heroSection {
-    padding: 4rem 0;
-
     .heroRow {
       max-width: 1200px;
       margin: 0 auto;
@@ -142,11 +145,11 @@ body {
 
         .heroButton {
           display: inline-block;
-          padding: 0.8rem 1.5rem;
           background: var(--gradient);
           color: white;
+          padding: 0.8rem 1.5rem;
+          border-radius: 8px;
           text-decoration: none;
-          border-radius: 25px;
           font-weight: 500;
           transition: transform 0.2s ease;
 
@@ -159,7 +162,6 @@ body {
   }
 
   .aboutSection {
-    padding: 4rem 0;
     margin: 0 auto;
     max-width: 1200px;
 
@@ -440,7 +442,6 @@ body {
       .heroRow {
         flex-direction: column;
         text-align: center;
-        gap: 3rem;
 
         .logoSection {
           .heroLogo {
@@ -635,9 +636,9 @@ body {
 // Footer Modernization
 #mainFooter {
   background: white;
-  padding: 3rem 0;
+  box-shadow: 0 -10px 20px var(--shadow);
+  padding: 2rem 0;
   margin-top: 4rem;
-  box-shadow: 0 -4px 20px var(--shadow);
 
   .contactRow {
     max-width: 1200px;
@@ -645,27 +646,50 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 2rem;
     padding: 0 2rem;
 
     .iconGroup {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 0.75rem;
+      transition: transform 0.2s ease;
 
-      img {
-        width: 24px;
-        opacity: 0.8;
+      &:hover {
+        transform: translateY(-2px);
       }
 
-      a,
-      p {
+      .contactIcon {
+        font-size: 1.5rem;
+        color: var(--primary);
+      }
+
+      .footerPara {
+        margin: 0;
+        font-size: 1rem;
         color: var(--text);
+      }
+
+      a.footerPara {
         text-decoration: none;
-        transition: color 0.2s ease;
+        color: var(--primary);
+        font-weight: 500;
 
         &:hover {
-          color: var(--primary);
+          text-decoration: underline;
         }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contactRow {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.5rem;
+
+      .iconGroup {
+        justify-content: center;
       }
     }
   }
@@ -869,9 +893,10 @@ body {
       }
 
       .serviceImg {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 1.5rem;
+        width: 100%;
+        height: auto;
+        margin: 0 auto 1.5rem auto;
+        display: block;
         padding: 1rem;
         background: var(--accent);
         border-radius: 16px;
@@ -974,11 +999,12 @@ body {
     }
 
     .cogImage {
-      width: 100%;
+      width: 66.67%;
       border-radius: 20px;
       box-shadow: 0 20px 40px var(--shadow);
       transform: rotate(4deg);
       transition: transform 0.3s ease;
+      margin-top: 4rem;
 
       &:hover {
         transform: rotate(0deg);
@@ -990,13 +1016,18 @@ body {
 @media (max-width: 768px) {
   #mainAreas .areasRow {
     grid-template-columns: 1fr;
+    gap: 2rem;
 
-    .areasContent .areasList {
-      grid-template-columns: repeat(2, 1fr);
+    .areasContent {
+      .areasList {
+        grid-template-columns: 1fr;
+      }
     }
 
     .cogImage {
+      width: 100%;
       transform: none;
+      margin-top: 2rem;
     }
   }
 }

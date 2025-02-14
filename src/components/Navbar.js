@@ -1,6 +1,6 @@
 import React from "react";
 import head from "../styles/head.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -9,18 +9,38 @@ const Navbar = () => {
         <Link to="/home">
           <img id="navLogo" src={head} alt="CBT Inverclyde Logo" />
         </Link>
-        <Link className="navButton" to="/home">
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "navButton active" : "navButton"
+          }
+          to="/home"
+        >
           Home
-        </Link>
-        <Link className="navButton" to="/services">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "navButton active" : "navButton"
+          }
+          to="/services"
+        >
           Services
-        </Link>
-        <Link className="navButton" to="/willwork">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "navButton active" : "navButton"
+          }
+          to="/willwork"
+        >
           Will CBT Work For Me?
-        </Link>
-        <Link className="navButton" to="/fees">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "navButton active" : "navButton"
+          }
+          to="/fees"
+        >
           Fees
-        </Link>
+        </NavLink>
       </ul>
     </nav>
   );
